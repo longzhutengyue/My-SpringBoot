@@ -1,0 +1,21 @@
+quartz:
+  enabled: true
+server:
+  port: 9090
+spring:
+  application:
+    #Quartz调度中心
+    name: Spring-Quartz-Scheduler
+  datasource:
+    url: jdbc:mysql://localhost:3306/quartz?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 1234
+    tomcat:
+      initialSize: 20
+      maxActive: 100
+      maxIdle: 100
+      minIdle: 20
+      maxWait: 10000
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
